@@ -1,0 +1,9 @@
+{
+  "pages": [
+    {
+      "title": "Home",
+      "name": "home",
+      "demoSections": [{ "name": "homeLanding" }]
+    }
+  ]
+}

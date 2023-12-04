@@ -1,0 +1,12 @@
+{
+  "modules": [
+    {
+      "title": "Introduction",
+      "description": "Familiarizes users with your product or service",
+      "name": "introduction",
+      "moduleParts": [{ "name": "homeBase" }],
+      "required": true
+    },
+    { "name": "anotherPlugin", "repoName": "richjava/another-plugin" }
+  ]
+}

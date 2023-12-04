@@ -1,0 +1,12 @@
+{
+  "collections": [
+    {
+      "name": "primaryMenuItem",
+      "fields": {
+        "slug": { "type": "uid", "targetField": "label", "required": true },
+        "label": { "type": "string", "required": true },
+        "url": { "type": "string", "unique": true, "required": true }
+      }
+    }
+  ]
+}

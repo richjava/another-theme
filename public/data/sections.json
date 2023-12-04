@@ -1,0 +1,32 @@
+{
+  "sections": [
+    {
+      "name": "header",
+      "category": "layout",
+      "title": "Header",
+      "templates": ["header1"],
+      "defaultTemplate": { "name": "header1" },
+      "position": "middle",
+      "collections": { "primaryMenuItem": { "populate": [] } }
+    },
+    {
+      "name": "footer",
+      "category": "layout",
+      "title": "Footer",
+      "templates": ["footer1"],
+      "defaultTemplate": { "name": "footer1" },
+      "position": "middle",
+      "collections": {}
+    },
+    {
+      "name": "homeLanding",
+      "category": "sections",
+      "title": "Home Landing",
+      "attributes": { "heading": "Welcome! This is the Home Landing section." },
+      "templates": ["cover1"],
+      "defaultTemplate": { "name": "cover1" },
+      "position": "middle",
+      "collections": {}
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+.layout {
+  margin: 15px auto;
+  width: 1000px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .layout {
+    margin: 15px;
+    width: auto;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .layout {
+    margin: 15px;
+    width: auto;
+  }
+}

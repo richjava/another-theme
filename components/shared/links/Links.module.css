@@ -1,0 +1,18 @@
+.docs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(25%, auto));
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.docs h2 {
+  display: flex;
+  align-items: center;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .docs {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "templates": [
+    { "title": "Header 1", "name": "header1", "category": "headers" },
+    { "title": "Footer 1", "name": "footer1", "category": "footers" },
+    { "title": "Cover 1", "name": "cover1", "category": "covers" }
+  ]
+}

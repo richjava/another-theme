@@ -1,0 +1,10 @@
+{
+  "moduleParts": [
+    {
+      "title": "Home Base",
+      "name": "homeBase",
+      "page": { "name": "home" },
+      "sections": [{ "name": "homeLanding" }]
+    }
+  ]
+}

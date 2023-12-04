@@ -1,0 +1,16 @@
+.intro {
+  margin: 0 auto;
+  width: 1000px;
+  padding: 30px 20px 20px 0;
+}
+.message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.message h1 {
+  margin-left: 6px;
+}
+.intro span {
+  font-style: italic;
+}
