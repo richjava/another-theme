@@ -7,6 +7,6 @@
       "moduleParts": [{ "name": "homeBase" }],
       "required": true
     },
-    { "name": "anotherPlugin", "repoName": "richjava/another-plugin" }
+    { "name": "anotherPlugin", "repoName": "richjava/another-plugin", "version": "1.0.0" }
   ]
 }
