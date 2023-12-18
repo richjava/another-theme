@@ -4,7 +4,7 @@
       "title": "Introduction",
       "description": "Familiarizes users with your product or service",
       "name": "introduction",
-      "moduleParts": [{ "name": "homeBase" }],
+      "modulePages": [{ "name": "homeBase" }],
       "required": true
     },
     { "name": "anotherPlugin", "repoName": "richjava/another-plugin", "version": "1.0.0" }
