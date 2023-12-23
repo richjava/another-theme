@@ -22,7 +22,7 @@
       "name": "homeLanding",
       "category": "sections",
       "title": "Home Landing",
-      "attributes": { "heading": "Welcome! This is the Home Landing section." },
+      "data": { "heading": "Welcome! This is the Home Landing section." },
       "templates": ["cover1"],
       "defaultTemplate": { "name": "cover1" },
       "position": "middle",

@@ -4,15 +4,15 @@ import React from "react";
 type Props = {
   sectionName: string;
   content: {
-    attributes: any;
+    data: any;
     collections: any;
   };
 };
 
 export const DataView: React.FC<Props> = ({ sectionName, content }) => {
   if (!content) return null;
-  const { attributes, collections } = { ...content };
-  const hasData = attributes || collections;
+  const { data, collections } = { ...content };
+  const hasData = data || collections;
   if (hasData) {
     return (
       <div className={styles.dataView}>
@@ -22,20 +22,20 @@ export const DataView: React.FC<Props> = ({ sectionName, content }) => {
           </div>
         )}
         <div className={styles.body}>
-          <div className={styles.attributes}>
-            <h3>Attributes</h3>
-            {(!attributes || Object.keys(attributes).length === 0) && (
-              <p>No attributes</p>
+          <div className={styles.data}>
+            <h3>Data</h3>
+            {(!data || Object.keys(data).length === 0) && (
+              <p>No data</p>
             )}
             <ul>
-              {attributes &&
-                Object.keys(attributes).length > 0 &&
-                Object.keys(attributes).map((attributeName) => (
+              {data &&
+                Object.keys(data).length > 0 &&
+                Object.keys(data).map((attributeName) => (
                   <li key={attributeName}>
                     {attributeName}:
-                    {Array.isArray(attributes[attributeName]) ? (
+                    {Array.isArray(data[attributeName]) ? (
                       <ul>
-                        {attributes[attributeName].map((item, index) => (
+                        {data[attributeName].map((item, index) => (
                           <li key={index}>
                             <ul>
                               {Object.keys(item).map((key) => (
@@ -47,16 +47,16 @@ export const DataView: React.FC<Props> = ({ sectionName, content }) => {
                           </li>
                         ))}
                       </ul>
-                    ) : typeof attributes[attributeName] === "object" ? (
+                    ) : typeof data[attributeName] === "object" ? (
                       <ul>
-                        {Object.keys(attributes[attributeName]).map((key) => (
+                        {Object.keys(data[attributeName]).map((key) => (
                           <li key={key}>
-                            {key}: {attributes[attributeName][key]}
+                            {key}: {data[attributeName][key]}
                           </li>
                         ))}
                       </ul>
                     ) : (
-                      attributes[attributeName]
+                      data[attributeName]
                     )}
                   </li>
                 ))}
