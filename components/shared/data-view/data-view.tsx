@@ -81,7 +81,10 @@ export const DataView: React.FC<Props> = ({ sectionName, content }) => {
                             Object.keys(item).length > 0 &&
                             Object.keys(item).map((attributeName) => (
                               <li key={attributeName}>
-                                {attributeName}: {item[attributeName]}
+                                {attributeName}:{" "}
+                                {typeof item[attributeName] === "object"
+                                  ? JSON.stringify(item[attributeName])
+                                  : item[attributeName]}
                               </li>
                             ))}
                         </ul>
